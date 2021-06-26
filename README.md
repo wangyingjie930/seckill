@@ -1,7 +1,9 @@
-# imooc-product
+# seckill
 
 #### 介绍
-imooc-product
+
+- 秒杀系统测试
+- 项目练手
 
 #### 软件架构
 软件架构说明
