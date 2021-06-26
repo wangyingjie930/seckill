@@ -17,7 +17,6 @@ type ProductController struct {
 	Session        *sessions.Session
 }
 
-
 func (p *ProductController) GetDetail() mvc.View {
 	product, err := p.ProductService.GetProductByID(3)
 	if err != nil {

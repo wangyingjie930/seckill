@@ -37,8 +37,8 @@ func main() {
 
 	}
 	sess := sessions.New(sessions.Config{
-		Cookie:"AdminCookie",
-		Expires:600*time.Minute,
+		Cookie:  "AdminCookie",
+		Expires: 600 * time.Minute,
 	})
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
@@ -46,7 +46,7 @@ func main() {
 	user := repositories.NewUserRepository("user", db)
 	userService := services.NewService(user)
 	userPro := mvc.New(app.Party("/user"))
-	userPro.Register(userService, ctx,sess.Start)
+	userPro.Register(userService, ctx, sess.Start)
 	userPro.Handle(new(controllers.UserController))
 
 	product := repositories.NewProductManager("product", db)

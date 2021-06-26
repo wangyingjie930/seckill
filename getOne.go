@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"sync"
 )
+
 var sum int64 = 0
 
 //互斥锁
@@ -25,7 +26,7 @@ func GetOneProduct() bool {
 	return false
 }
 
-func GetProduct(w http.ResponseWriter, r *http.Request)  {
+func GetProduct(w http.ResponseWriter, r *http.Request) {
 	if GetOneProduct() {
 		w.Write([]byte("true"))
 		return
@@ -34,7 +35,7 @@ func GetProduct(w http.ResponseWriter, r *http.Request)  {
 	return
 }
 
-func main()  {
+func main() {
 	http.HandleFunc("/getOne", GetProduct)
 	err := http.ListenAndServe(":8084", nil)
 	if err != nil {

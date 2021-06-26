@@ -1,4 +1,4 @@
- package controllers
+package controllers
 
 import (
 	"fmt"
@@ -8,8 +8,8 @@ import (
 	"imooc-product/datamodels"
 	"imooc-product/encrypt"
 	"imooc-product/services"
-	"strconv"
 	"imooc-product/tool"
+	"strconv"
 )
 
 type UserController struct {
