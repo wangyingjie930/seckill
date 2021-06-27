@@ -21,6 +21,7 @@ require (
 	github.com/klauspost/compress v1.13.1 // indirect
 	github.com/microcosm-cc/bluemonday v1.0.14 // indirect
 	github.com/opentracing/opentracing-go v1.2.0
+	github.com/rabbitmq/amqp091-go v0.0.0-20210623134908-fa1229110efb
 	github.com/ryanuber/columnize v2.1.2+incompatible // indirect
 	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
 	golang.org/x/crypto v0.0.0-20210616213533-5ff15b29337e
