@@ -23,6 +23,13 @@ func MergeSort(arr []int, start int, end int)  {
 }
 
 /**
+自底向上的归并排序
+ */
+func MergeSortBU(arr []int) {
+	//
+}
+
+/**
 合并两个有序数组
 */
 func merge(arr []int, start, mid, end int)  {
