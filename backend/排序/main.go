@@ -1,7 +1,8 @@
 package main
 
 import (
-	Heap "imooc-product/backend/排序/堆排序"
+	"fmt"
+	BST "imooc-product/backend/排序/二叉查找树"
 	"math/rand"
 	"time"
 )
@@ -48,9 +49,19 @@ func main() {
 		fmt.Print(heap.ExtractMax(), " ")
 	}*/
 
-	topN := Heap.NewTopN(1000)
+	/*topN := Heap.NewTopN(1000)
 	for _, v := range rand.Perm(100000000) {
 		topN.Insert(v)
 	}
-	topN.Data()
+	topN.Data()*/
+
+	tree := BST.NewBST()
+	for _, v := range rand.Perm(50) {
+		tree.Insert(rand.Int() % 1000, v)
+	}
+	tree.PreOrder()
+	fmt.Println()
+	tree.InOrder()
+	fmt.Println()
+	tree.PostOrder()
 }

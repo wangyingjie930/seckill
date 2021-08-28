@@ -9,7 +9,7 @@ import (
 
 func main() {
 	data := []int{10, 11, 17, 22, 22, 26}
-	index, err := binarySearch(data, 0)
+	index, err := binarySearch(data, 22)
 	if err != nil {
 		fmt.Println(err)
 		fmt.Println(errors.Unwrap(err))
@@ -36,7 +36,7 @@ func binarySearch(data []int, search int) (int, error) {
 			i = j - 1
 		}
 	}
-	index, err := divideSearch(data[i:j], search)
+	index, err := binarySearch(data[i:j], search)
 	if err != nil {
 		//return -1, err
 		return -1, fmt.Errorf("w : %w", err)
