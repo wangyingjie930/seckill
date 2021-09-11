@@ -74,3 +74,12 @@ func TestLowestAncestor(t *testing.T) {
 	node = LowestAncestor(tree.root, tree.root.left.left, tree.root.left.right.right)
 	fmt.Printf("LCA: %+v\nroot: %+v\n", node, tree.root.left)
 }
+
+func TestIsBalance(t *testing.T) {
+	tree := NewBST()
+	tree.Insert(3, 3)
+	tree.Insert(1, 1)
+	tree.Insert(2, 2)
+	tree.Insert(4, 4)
+	fmt.Print(IsBalance(tree.root))
+}
