@@ -215,7 +215,7 @@ func removeMax(node *Node) *Node {
 删除最小节点
 规律: 递归获取左节点就可以找到, 而且它做多只有右子树
  */
-func removeMin(node *Node) *Node  {
+func removeMin(node *Node) *Node {
 	if node.left == nil {
 		right := node.right
 		node = nil

@@ -1,6 +1,6 @@
 package BST
 
-import BST "imooc-product/backend/排序/二叉查找树"
+import BST "imooc-product/backend/二叉查找树"
 
 const RED bool = false
 const BLEAK bool = true
