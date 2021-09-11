@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-	BST "imooc-product/backend/排序/二叉查找树"
 	"math/rand"
 	"time"
 )
@@ -54,14 +52,4 @@ func main() {
 		topN.Insert(v)
 	}
 	topN.Data()*/
-
-	tree := BST.NewBST()
-	for _, v := range rand.Perm(50) {
-		tree.Insert(rand.Int() % 1000, v)
-	}
-	tree.PreOrder()
-	fmt.Println()
-	tree.InOrder()
-	fmt.Println()
-	tree.PostOrder()
 }
