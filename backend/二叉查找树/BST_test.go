@@ -92,6 +92,10 @@ func TestIsBCT(t *testing.T) {
 	fmt.Print(IsBCT(tree.root))
 }
 
+func TestLevelOrder(t *testing.T) {
+	fmt.Println(LevelOrder(tree.root))
+}
+
 func TestZigzagLevelOrder(t *testing.T) {
 	fmt.Println(ZigzagLevelOrder(tree.root))
 }
