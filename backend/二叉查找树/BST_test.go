@@ -83,3 +83,15 @@ func TestIsBalance(t *testing.T) {
 	tree.Insert(4, 4)
 	fmt.Print(IsBalance(tree.root))
 }
+
+func TestIsBCT(t *testing.T) {
+	tree := NewBST()
+	tree.Insert(2, 2)
+	tree.Insert(3, 3)
+	tree.Insert(1, 1)
+	fmt.Print(IsBCT(tree.root))
+}
+
+func TestZigzagLevelOrder(t *testing.T) {
+	fmt.Println(ZigzagLevelOrder(tree.root))
+}
