@@ -51,6 +51,9 @@ func MajorityElement(nums []int) int {
 	return rightMain
 }
 
+/**
+左边数组最多数字的数量是否大于右边数组最多数字的数量
+ */
 func leftCountBigger(nums []int, left int, right int) bool {
 	leftCount := 0
 	rightCount := 0

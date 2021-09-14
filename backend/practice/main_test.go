@@ -15,3 +15,7 @@ func TestMajorityElement(t *testing.T) {
 	fmt.Println(MajorityElement(arr))
 	//fmt.Print(arr[0:1], arr[1:])
 }
+
+func TestFindMedianSortedArrays(t *testing.T) {
+	fmt.Println(FindMedianSortedArrays([]int{}, []int{2, 4}))
+}
