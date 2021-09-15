@@ -2,6 +2,7 @@ package BST
 
 import (
 	"fmt"
+	"strings"
 	"testing"
 )
 
@@ -106,4 +107,15 @@ func TestIsValidBST(t *testing.T) {
 
 func TestIsValidBST21(t *testing.T) {
 	fmt.Println(IsValidBST2(tree.root))
+}
+
+func TestSerialize(t *testing.T) {
+	serial := Serialize(tree.root)
+	fmt.Println(serial)
+	tree.root = UnSerialize(serial)
+	tree.PreOrder()
+}
+
+func TestString(t *testing.T) {
+	fmt.Println(strings.Index("92,4,2,1,0", ","))
 }
