@@ -99,3 +99,11 @@ func TestLevelOrder(t *testing.T) {
 func TestZigzagLevelOrder(t *testing.T) {
 	fmt.Println(ZigzagLevelOrder(tree.root))
 }
+
+func TestIsValidBST(t *testing.T) {
+	fmt.Println(IsValidBST(tree.root))
+}
+
+func TestIsValidBST21(t *testing.T) {
+	fmt.Println(IsValidBST2(tree.root))
+}
