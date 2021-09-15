@@ -26,6 +26,9 @@ func IsValidBST(head *Node) (bool, *Node, *Node) {
 	return false, nil, nil
 }
 
+/**
+使用中序遍历, 如果并没有从小到大进行输出则不是一棵二叉查找树
+ */
 func IsValidBST2(head *Node) bool {
 	if head == nil {
 		return true
