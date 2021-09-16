@@ -37,3 +37,19 @@ func TestDetectCycle(t *testing.T) {
 	node4.Next = node1
 	fmt.Println(DetectCycle(node1))
 }
+
+func TestGetIntersectionNode(t *testing.T) {
+	node1 := &Node{Val: 1}
+	node2 := &Node{Val: 9}
+	node3 := &Node{Val: 1}
+	node4 := &Node{Val: 2}
+	node5 := &Node{Val: 4}
+	node6 := &Node{Val: 3}
+
+	node1.Next = node2
+	node2.Next = node3
+	node3.Next = node4
+	node4.Next = node5
+	node6.Next = node4
+	fmt.Println(GetIntersectionNode(node1, node6))
+}
