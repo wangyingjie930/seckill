@@ -38,3 +38,10 @@ func FindMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	}
 	return -1
 }
+
+/**
+维护大根堆和小根堆
+1. 第一个数进大根堆
+2. 当前数 <= 大根堆堆顶元素, 入大根堆, 否则入小根堆
+3. 当任意堆长度差超过2, 从长的堆将堆顶元素调到另外的堆上
+ */

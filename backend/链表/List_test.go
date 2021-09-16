@@ -25,3 +25,15 @@ func TestReverseList(t *testing.T) {
 	head = ReverseList(head)
 	ShowList(head)
 }
+
+func TestDetectCycle(t *testing.T) {
+	node1 := &Node{Val: 3}
+	node2 := &Node{Val: 2}
+	node3 := &Node{Val: 0}
+	node4 := &Node{Val: -4}
+	node1.Next = node2
+	node2.Next = node3
+	node3.Next = node4
+	node4.Next = node1
+	fmt.Println(DetectCycle(node1))
+}
