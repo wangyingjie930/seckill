@@ -19,3 +19,21 @@ func TestMajorityElement(t *testing.T) {
 func TestFindMedianSortedArrays(t *testing.T) {
 	fmt.Println(FindMedianSortedArrays([]int{}, []int{2, 4}))
 }
+
+func TestMissingNumber(t *testing.T) {
+	/*h := &IntHeap{2, 1, 5}
+	heap.Init(h)
+	heap.Push(h, 3)
+	fmt.Printf("minimum: %d\n", (*h)[0])
+	for h.Len() > 0 {
+		fmt.Printf("%d ", heap.Pop(h))
+	}*/
+	fmt.Println(MissingNumber([]int{3,0,1}))
+}
+
+func TestLengthOfLongestSubstring(t *testing.T) {
+	fmt.Println(LengthOfLongestSubstring("abcabcbb"))
+	fmt.Println(LengthOfLongestSubstring("bbbbbb"))
+	fmt.Println(LengthOfLongestSubstring("pwwkew"))
+	fmt.Println(LengthOfLongestSubstring("dvdf"))
+}
