@@ -37,3 +37,13 @@ func TestLengthOfLongestSubstring(t *testing.T) {
 	fmt.Println(LengthOfLongestSubstring("pwwkew"))
 	fmt.Println(LengthOfLongestSubstring("dvdf"))
 }
+
+func TestMinWindow(t *testing.T) {
+	fmt.Println(MinWindow("ADOBECODEBANC", "ABC"))
+	fmt.Println(MinWindow("aa", "aa"))
+	fmt.Println(MinWindow("a", "b"))
+}
+
+func TestPrintArr(t *testing.T) {
+	fmt.Println(SolveNQueens(4))
+}
