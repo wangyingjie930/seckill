@@ -53,3 +53,10 @@ func TestLongestPalindrome(t *testing.T) {
 	fmt.Println(LongestPalindrome("babad"))
 	fmt.Println(1 & 1, 0 & 1, 2 & 1)
 }
+
+func TestQuotaA(t *testing.T) {
+	/*num, arr := QuotaA([]int{5,3,2,1,6,7,8,4})
+	fmt.Println(num, arr)*/
+	num, arr := QuotaA([]int{1,3})
+	fmt.Println(num, arr)
+}
