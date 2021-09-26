@@ -45,5 +45,11 @@ func TestMinWindow(t *testing.T) {
 }
 
 func TestPrintArr(t *testing.T) {
-	fmt.Println(SolveNQueens(4))
+	fmt.Println(SolveNQueens(9))
+}
+
+func TestLongestPalindrome(t *testing.T) {
+	fmt.Println(MaxLcpsLength1("babad"))
+	fmt.Println(LongestPalindrome("babad"))
+	fmt.Println(1 & 1, 0 & 1, 2 & 1)
 }
