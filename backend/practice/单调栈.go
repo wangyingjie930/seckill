@@ -56,3 +56,29 @@ func QuotaA(nums []int) (int, map[string]int) {
 	return max, maxMap
 }
 
+/**
+输入: nums1 = [4,1,2], nums2 = [1,3,4,2].
+输出: [-1,3,-1]
+解释:
+    对于 num1 中的数字 4 ，你无法在第二个数组中找到下一个更大的数字，因此输出 -1 。
+    对于 num1 中的数字 1 ，第二个数组中数字1右边的下一个较大数字是 3 。
+    对于 num1 中的数字 2 ，第二个数组中没有下一个更大的数字，因此输出 -1 。
+ */
+func NextGreaterElement(nums1 []int, nums2 []int) []int {
+	stack := make([]int, len(nums2))
+	mapArr := make(map[int]int, len(nums1))
+	var ret []int
+	for i := 0; i < len(nums2); i++ {
+		mapArr[nums2[i]] = -1
+		for len(stack) > 0 && nums2[stack[len(stack) - 1]] < nums2[i] {
+			mapArr[nums2[stack[len(stack) - 1]]] = nums2[i]
+			stack = stack[:len(stack) - 1]
+		}
+		stack = append(stack, i)
+	}
+	for _, v := range nums1 {
+		ret = append(ret, mapArr[v])
+	}
+	return ret
+}
+

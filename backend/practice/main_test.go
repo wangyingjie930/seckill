@@ -60,3 +60,7 @@ func TestQuotaA(t *testing.T) {
 	num, arr := QuotaA([]int{1,3})
 	fmt.Println(num, arr)
 }
+
+func TestNextGreaterElement(t *testing.T) {
+	fmt.Println(NextGreaterElement([]int{4,1,2}, []int{1,3,4,2}))
+}
