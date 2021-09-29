@@ -1,5 +1,7 @@
 package practice
 
+import List "imooc-product/backend/链表"
+
 /**
 定义：数组中累积和与最小值的乘积，假设叫做指标A。给定一个数组，请返回子数组中，指标A最大的值。
  */
@@ -82,3 +84,23 @@ func NextGreaterElement(nums1 []int, nums2 []int) []int {
 	return ret
 }
 
+func addTwoNumbers(l1 *List.Node, l2 *List.Node) *List.Node {
+	var l3 *List.Node
+	j := l3
+	for l1 != nil && l2 != nil {
+		val := l1.Val + l2.Val
+		if val >= 10 {
+			val = (l1.Val + l2.Val) % 10
+			if l1.Next != nil {
+				l1.Next.Val = l1.Next.Val + 1
+			}else {
+				l1.Next = &List.Node{Val: 1, Next: nil}
+			}
+		}
+		j = &List.Node{Val: val, Next: nil}
+		j = j.Next
+		l1 = l1.Next
+		l2 = l2.Next
+	}
+	return l3
+}

@@ -64,3 +64,20 @@ func TestQuotaA(t *testing.T) {
 func TestNextGreaterElement(t *testing.T) {
 	fmt.Println(NextGreaterElement([]int{4,1,2}, []int{1,3,4,2}))
 }
+
+func TestNumIslands(t *testing.T) {
+	fmt.Println(NumIslands([][]byte{
+		{1,0,1,1,0},
+		{1,1,0,1,0},
+		{1,1,0,0,0},
+		{0,0,0,0,0},
+	}))
+	/*
+	[["1","1","1"],["0","1","0"],["1","1","1"]]	*/
+	//[["1","0","1","1","1"],["1","0","1","0","1"],["1","1","1","0","1"]]
+	fmt.Println(NumIslands([][]byte{
+		{1,0,1,1,1},
+		{1,0,1,0,1},
+		{1,1,1,0,1},
+	}))
+}
