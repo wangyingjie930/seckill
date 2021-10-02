@@ -123,3 +123,7 @@ func TestString(t *testing.T) {
 func TestDiameterOfBinaryTree(t *testing.T) {
 	fmt.Println(DiameterOfBinaryTree(tree.root))
 }
+
+func TestMaxHappy(t *testing.T) {
+	fmt.Println(MaxHappy(tree.root))
+}
