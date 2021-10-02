@@ -119,3 +119,7 @@ func TestSerialize(t *testing.T) {
 func TestString(t *testing.T) {
 	fmt.Println(strings.Index("92,4,2,1,0", ","))
 }
+
+func TestDiameterOfBinaryTree(t *testing.T) {
+	fmt.Println(DiameterOfBinaryTree(tree.root))
+}
