@@ -2,6 +2,7 @@ package practice
 
 import (
 	"fmt"
+	"math/rand"
 	"testing"
 )
 
@@ -80,4 +81,21 @@ func TestNumIslands(t *testing.T) {
 		{1,0,1,0,1},
 		{1,1,1,0,1},
 	}))
+}
+
+func TestTwoMi(t *testing.T) {
+	fmt.Println(TwoMi(1024))
+	fmt.Println(IsPowerOfFour(16), 0x55)
+}
+
+func TestMinSubArrayLen(t *testing.T) {
+	fmt.Println(arr, MinSubArrayLen(110, arr))
+}
+
+func TestMinSubArrayLenDp(t *testing.T) {
+	fmt.Println(MinSubArrayLenDp(63542, rand.Perm(10000)))
+}
+
+func TestMinSubArrayLenDynamic(t *testing.T) {
+	fmt.Println(MinSubArrayLenDp(63542, rand.Perm(10000)))
 }
