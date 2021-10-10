@@ -1,5 +1,7 @@
 package practice
 
+import "math/rand"
+
 /**
 使用快速排序实现
  */
