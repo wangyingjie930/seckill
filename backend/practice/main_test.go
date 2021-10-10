@@ -97,5 +97,13 @@ func TestMinSubArrayLenDp(t *testing.T) {
 }
 
 func TestMinSubArrayLenDynamic(t *testing.T) {
-	fmt.Println(MinSubArrayLenDp(63542, rand.Perm(10000)))
+	fmt.Println(MinSubArrayLenDynamic(63542, rand.Perm(10000)))
+}
+
+func TestFindKthLargest(t *testing.T) {
+	fmt.Println(FindKthLargest([]int{4, 5, 6, 7, 8, 9, 9, 10}, 4))
+}
+
+func TestSmallestK(t *testing.T) {
+	fmt.Println(SmallestK([]int{-1, 3, 4, 0, -1,2, 5, -6, 3, -2, -2, 0, -1, -1, 2}, 4))
 }

@@ -44,7 +44,7 @@ func processMinSubArrayLen(target int, nums []int, i int) int  {
 
 
 /**
-改造成计划搜索
+改造成记忆化搜索
 实际就是添加一个数组, 缓存递归函数的可变参数对应的结果
 而不用像暴力算法一样重新计算相同参数时的结果
  */
@@ -150,3 +150,41 @@ func MinSubArrayLenDynamic(target int, nums []int) int {
 
 	return dp[0][target]
 }
+
+//还有3维数组
+//两个递归相互交叉
+//
+
+/**
+2维数组+枚举
+for (int index =N-1;index>=0;index--){
+	for (int rest = e;rest <=aim;rest++){
+		int ways =0;
+		for (int zhang = O; arr[index]* zhang <= rest; zhang++) {
+			ways += dp[index + 1] [rest - arr[index] * zhang];
+		}
+		dp[index][rest] = ways;
+	}
+}
+
+根据位置依赖 将枚举优化
+for (int index =N-1;index>=0;index--){
+	for (int rest = e;rest <=aim;rest++){
+		dp[index][rest] = dp[index+1][rest];
+		if(rest - arr[index]>=0){
+			dp[index][rest] += dp[index][rest - arr[index]];
+		}
+	}
+}
+ */
+
+/**
+如何进行尝试呢?
+1. 尽量让可变参数是0维(int, string等, 不要数组)
+2. 可变的参数尽可能地少(涉及到数组的维度)
+
+ */
+
+//滑动窗口
+//打表法
+//预处理法, 生成辅助数组, 加速答案的获取, 空间换时间

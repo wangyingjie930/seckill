@@ -27,6 +27,7 @@ func (t *ThreeWays) partition(arr []int, l, r int) (int, int) {
 	i := l + 1
 	for i < gt {
 		if arr[i] < arr[l] {
+			arr[i], arr[lt + 1] = arr[lt + 1], arr[i]
 			lt ++
 			i ++
 		}else if arr[i] > arr[l] {
