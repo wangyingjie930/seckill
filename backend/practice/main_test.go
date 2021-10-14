@@ -111,3 +111,8 @@ func TestSmallestK(t *testing.T) {
 func TestLongestValidParentheses(t *testing.T) {
 	fmt.Println(LongestValidParentheses(")()())()"))
 }
+
+func TestNumDecodings(t *testing.T) {
+	fmt.Println(NumDecodings("100"))
+	fmt.Println(NumDecodings1("111111111111"))
+}
