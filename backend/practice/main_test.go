@@ -116,3 +116,8 @@ func TestNumDecodings(t *testing.T) {
 	fmt.Println(NumDecodings("100"))
 	fmt.Println(NumDecodings1("111111111111"))
 }
+
+func TestFindMinMoves(t *testing.T) {
+	fmt.Println(FindMinMoves([]int{9,1,8,8,9}))
+	fmt.Println(FindMinMoves([]int{0, 3, 0}))
+}
