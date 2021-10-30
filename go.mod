@@ -19,6 +19,7 @@ require (
 	github.com/kataras/golog v0.1.7 // indirect
 	github.com/kataras/iris v11.1.1+incompatible
 	github.com/klauspost/compress v1.13.1 // indirect
+	github.com/liyue201/gostl v1.0.1 // indirect
 	github.com/microcosm-cc/bluemonday v1.0.14 // indirect
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/rabbitmq/amqp091-go v0.0.0-20210623134908-fa1229110efb
